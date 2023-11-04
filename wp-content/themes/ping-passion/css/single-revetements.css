@@ -1,0 +1,168 @@
+.single-revetements{
+    background-color:  rgb(253, 253, 253);
+}
+
+.single-revetements .page-header {
+    background-color: rgb(86, 86, 236);
+    min-height: 250px;
+    color : white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-revetements .page-header h1 {
+    font-size: 42px;
+}
+
+.single-revetements .page-header p {
+    font-size: 24px;
+    color: white;
+}
+
+.wrapper-revetements {
+    margin: 0 50px;
+    display : flex;
+    max-width: 1280px;
+    justify-content: center;
+}
+
+.card-revetements {
+    margin: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap : 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-revetements img {
+    width: 100%;
+    height: 400px;
+    grid-column: 1;
+    object-fit: contain;
+}
+
+.card-revetements .card-content-revetements {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+
+.card-content-revetements h3 {
+   color : rgb(86, 86, 236);
+   font-size: 32px;
+   font-weight: 700;
+   line-height: 0.5;
+   text-align: center;
+}
+
+
+.card-revetements .btn-revetements {
+    background-color:  rgb(86, 86, 236);
+    padding: 20px 10px;
+    color : white;
+    font-weight: 700;
+    width: 50%;
+}
+
+.card-revetements .btn-revetements:hover {
+    background-color:  rgb(56, 56, 156);
+}
+
+.info-produit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.caracteristique {
+    margin: 0 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.caracteristique .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgb(86, 86, 236);
+    border-radius: 10px;
+}
+
+.caracteristique .card h3 {
+    color : rgb(86, 86, 236);
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+}
+.caracteristique .card span{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 0.5;
+}
+
+.caracteristique .card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.caracteristique .card li {
+    list-style-type: none;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* NAV BUTTON AT THE BOTTOM OF THE PRODUCT */
+.nav-revetements a {
+    display: block;
+    font-size : 16px;
+    padding: 20px 8px;
+    background-color: rgb(86, 86, 236);
+    color : white;
+    text-decoration: none;
+    text-align: center;
+    width : 100%;
+}
+
+.nav-revetements a:hover {
+    background-color: rgb(56, 56, 156);
+    color : white;
+}
+
+.nav-revetements a:active {
+    color : white;
+}
+
+.nav-revetements a:visited {
+    color : white;
+}
+
+@media screen and (max-width : 900px) {
+    .card-revetements img {
+       order : 1
+    }
+    .card-revetements .card-content-revetements {
+        order : 2;
+    }
+    .card-revetements {
+        grid-template-columns: 1fr;
+        margin: 50px;
+    }
+}

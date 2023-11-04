@@ -1,0 +1,90 @@
+.post-type-archive-revetements {
+    background-color: rgb(253, 253, 253);
+}
+
+.post-type-archive-revetements .page-header {
+    background-color: rgb(86, 86, 236);
+    min-height: 250px;
+    color : rgb(253, 253, 253);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-type-archive-revetements .page-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.post-type-archive-revetements .page-header p {
+    font-size: 18px;
+}
+
+.revetements-wrapper {
+    margin: 100px;
+    display : grid;
+    grid-template-columns: repeat(2,1fr);
+    gap : 40px;
+    max-width: 1280px;
+    justify-content: center;
+}
+
+.revetements-wrapper .revetements-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border : 1px solid  rgb(86, 86, 236);
+    border-radius: 30px;
+    box-shadow: 9px -36px 232px -36px rgba(0,0,0,0.21);
+}
+
+.revetements-card h2 {
+    color : rgb(86, 86, 236);
+    text-align: center;
+}
+
+.revetements-card img {
+    margin-top: 20px;
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius : 29px 29px 0 0;
+}
+
+.revetements-card-content {
+    padding: 20px;
+}
+
+.revetements-card a {
+    display: block;
+    width: 100%;
+    background-color: rgb(86, 86, 236);
+    border-radius: 0 0 29px 29px;
+    color : white;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    padding : 20px 8px;
+}
+
+.revetements-card a:hover {
+    background-color: rgb(56, 56, 156);
+    color : white;
+}
+
+.revetements-card a:active {
+    color: white;
+}
+
+.revetements-card a:visited {
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    .revetements-wrapper {
+        grid-template-columns: 1fr;
+    }
+}

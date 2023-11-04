@@ -1,0 +1,121 @@
+.single-bois{
+    background-color:  rgb(253, 253, 253);
+}
+
+.single-bois .page-header {
+    background-color: rgb(86, 86, 236);
+    min-height: 250px;
+    color : white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-bois .page-header h1 {
+    font-size: 42px;
+    margin-bottom: 0.2em;
+    line-height: 10px;
+}
+
+.single-bois .page-header p {
+    font-size: 24px;
+    color: white;
+}
+
+.wrapper-bois {
+    margin: 50px;
+    display : flex;
+    max-width: 1280px;
+    justify-content: center;
+}
+
+.card-bois{
+    margin: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap : 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-bois img {
+    width: 100%;
+    height: 400px;
+    grid-column: 1;
+    object-fit: contain;
+}
+
+.card-bois .card-content {
+    padding: 10px;
+}
+
+.card-content h3 {
+   color : rgb(86, 86, 236);
+   font-size: 32px;
+   font-weight: 700;
+   line-height: 1;
+}
+.card-content p {
+    border : 1px solid  rgb(86, 86, 236);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.card-bois .btn-bois {
+    background-color:  rgb(86, 86, 236);
+    padding: 20px 10px;
+    color : white;
+    font-weight: 700;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-bois .btn-bois:hover {
+    background-color:  rgb(56, 56, 156);
+    padding: 20px 10px;
+    color : white;
+    font-weight: 700;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.nav-bois a {
+    display: block;
+    font-size : 16px;
+    padding: 20px 8px;
+    background-color: rgb(86, 86, 236);
+    color : white;
+    text-decoration: none;
+    text-align: center;
+    width : 100%;
+}
+
+.nav-bois a:hover {
+    background-color: rgb(56, 56, 156);
+    color : white;
+}
+
+.nav-bois a:active {
+    color : white;
+}
+
+.nav-bois a:visited {
+    color : white;
+}
+
+
+@media screen and (max-width: 900px) {
+    .card-bois img {
+        order : 1;
+    }
+    .card-bois .card-content {
+        order : 2;
+    }
+    .card-bois h3 {
+        text-align: center;
+    }
+    .card-bois {
+        grid-template-columns: 1fr;
+    }
+}
